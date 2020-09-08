@@ -34,7 +34,7 @@ COPY nginx.conf /etc/nginx/nginx.conf
 # COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 #### copy artifact build from the 'build environment'
-COPY --from=build /usr/src/app/dist/angular-starter /usr/share/nginx/html
+COPY --from=build /usr/src/app/dist/consent-admin /usr/share/nginx/html
 #### don't know what this is, but seems cool and techy
 # CMD ["nginx", "-g", "daemon off;"]
 # RUN usermod -u 1000 www-data
